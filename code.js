@@ -4,9 +4,10 @@ const app = Vue.createApp({
 
     },
 
-    data: function(a,b){
+    data: function(){
         return{
-            fullName: 'Amanda' + ' ' + 'Gudlwa' 
+            name: 'Amanda',
+            surname: 'gudlwa' 
         }
     }
 
