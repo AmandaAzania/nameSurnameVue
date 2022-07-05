@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>You pressed A</title>
+
+    <style>
+        body{
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>keyboard key handling</h1>
+
+    <h4>if you press the special key you will get a message. guess the special key</h4>
+
+    <h6>CLUE:
+      <p>
+        Knock Knock
+        Who’s there?
+        Acid
+        Acid who?
+        Acid down and be quiet
+      </p>
+    </h6>
+    <div id="app">
+        <input type='text' placeholder='Enter your letter' @keypress='handleKeyPressed'/>
+
+        <p id="p" v-if="show">You pressed a/A key</p>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
